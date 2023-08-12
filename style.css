@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--DarkBlue); */
+    background-image: radial-gradient(
+        farthest-corner at 50% -10px,
+        var(--DarkBlue) 0%,
+        var(--MediumGreyTransparent) 100%
+      );
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+}
+
+.rating-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+
+}
+.circle {
+    background-color: var(--MediumGreyTransparent);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 50%;
+    color: var(--LightGrey);
+    
+}
+
+.rating-card-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.rating-card-subtext {
+    color: var(--LightGrey);
+    font-weight: 200;
+}
+.rating-btns {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: flex-end;
+}
+
+.rating-btn-selected {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: default;
+
+}
+
+.rating-btn:hover {
+    background-color: var(--MediumGrey);
+    cursor: pointer;
+    color: var(--White);
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: var(--Orange);
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+
+}
+
+
+
+.thankyou-card {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 370px;
+
+}
+
+.selected-text {
+    color: var(--Orange);
+    background-color: var(--MediumGreyTransparent);
+    padding: 5px 20px;
+    font-size: 14px;
+    border-radius: 40px;
+    font-weight: lighter;
+
+}
+
+.selected-rating-text {
+    color: var(--Orange);
+}
+
+.thankyou-card-title {
+font-size: 34px;
+    font-weight: 700;
+}
+
+.thankyou-card-subtext {
+    color: var(--LightGrey);
+    text-align: center;
+}
+:root {
+/* ## Colors */
+
+/* ### Primary */
+
+--Orange: hsl(25, 97%, 53%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--LightGrey: #959eac;
+--MediumGrey: hsl(216, 12%, 54%);
+--MediumGreyTransparent: hsla(216, 12%, 54%, 0.089);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
